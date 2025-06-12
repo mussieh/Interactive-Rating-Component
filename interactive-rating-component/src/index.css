@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Overpass";
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url("../src/assets/fonts/Overpass-VariableFont_wght.ttf")
+        format("truetype");
+}
+
+@config "../tailwind.config.js";
+
+.button-style {
+    @apply w-10 h-10 md:w-12 md:h-12 rounded-full flex justify-center items-center text-[0.9375rem] cursor-pointer hover:bg-button-color hover:text-[#4C3223] font-bold;
+}
